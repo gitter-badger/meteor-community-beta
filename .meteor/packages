@@ -4,5 +4,12 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
+accounts-base
+iron:router
+accounts-password
+joshowens:accounts-entry
+less
+pinglamb:bootstrap3
+sacha:spin
+mrt:iron-router-progress
+ian:accounts-ui-bootstrap-3
