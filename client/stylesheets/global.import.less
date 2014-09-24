@@ -26,6 +26,65 @@ body {
 	box-shadow: none;
 }
 
+// Page header
+.page-header {
+	margin: 60px 0;
+	padding: 0;
+	border: none;
+	text-align: center;
+
+		h1 {
+			margin: 0 0 10px 0;
+			font-size: 4em;
+		}
+	
+		.lead {
+			text-align: center;
+			font-weight: 300;
+			max-width: 800px;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			color: lighten(@mc-secondary-color, 10%);
+		}
+}
+
+// Load more button
+.load-more {
+	margin: 40px 0;
+	text-align: center;
+
+		.load-more-btn {
+			display: inline-block;
+			background-color: @mc-secondary-color;
+			padding: 15px 20px;
+			font-size: 1.5em;
+			color: lighten(@mc-secondary-color, 50%);
+
+				&:hover {
+					color: #fff;
+					background-color: @mc-primary-color;
+				}
+		}
+
+		.load-more-btn:before {
+			.fa-icon();
+			content: "\f067";
+			margin-right: 10px;
+		}
+}
+
+
+// Bootstrap modal restyle
+.modal {
+	color: #333;
+
+	h4 {
+		font-size: 2em;
+		font-weight: 700;
+	}
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
 
