@@ -1,3 +1,27 @@
 <template name="home">
-
+	<section class="home-hero">
+		<h1>Greetings Meteorites. <br class="mobile-only"> Welcome to the Meteor.community <br> A place for fellow Meteorites to connect, discuss and share.</h1>
+	</section>
+	<section class="home-nav-boxes clearfix">
+		<nav>
+			<div class="home-nav-box forum"><a href="{{pathFor 'forum'}}">Forum</a></div>
+			<div class="home-nav-box developers"><a href="{{pathFor 'developers'}}">Developers</a></div>
+			<div class="home-nav-box jobs"><a href="{{pathFor 'jobs'}}">Jobs</a></div>
+			<div class="home-nav-box events"><a href="{{pathFor 'events'}}">Events</a></div>
+			<div class="home-nav-box resources"><a href="{{pathFor 'resources'}}">Resources</a></div>
+			<div class="home-nav-box articles"><a href="{{pathFor 'articles'}}">Articles</a></div>
+		</nav>
+	</section>
+	<section class="home-partners">
+		<h2>Supporting Partners</h2>
+		<p>This site is made with love and supported by the help of the following organisations</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"><a href="mailto:partners@meteor.community" class="partner-box">Become a Partner</a></div>
+				<div class="col-md-3"><a href="mailto:partners@meteor.community" class="partner-box">Become a Partner</a></div>
+				<div class="col-md-3"><a href="mailto:partners@meteor.community" class="partner-box">Become a Partner</a></div>
+				<div class="col-md-3"><a href="mailto:partners@meteor.community" class="partner-box">Become a Partner</a></div>
+			</div>
+		</div>
+	</section>
 </template>

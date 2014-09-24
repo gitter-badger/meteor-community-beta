@@ -1,4 +1,4 @@
-meteor-community-beta
+meteor.community beta
 =====================
 
 A community site for Meteor JS

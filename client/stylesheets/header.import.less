@@ -95,6 +95,9 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
 
+ 	.navbar-nav > li > a {
+		padding: 20px 15px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -102,7 +105,7 @@
 
 	.navbar-brand {
 		font-size: 28px;
-		margin-top: 5px;
+		margin-top: 7px;
 	}
 
 }
@@ -114,4 +117,13 @@
 		padding: 20px 30px;
 	}
 
+}
+
+// Extra media query here to stop header menu dropping when window is less than 1320px wide
+@media (max-width: 1320px) {
+
+	// Navbar menu
+	.navbar-nav > li > a {
+		font-size: 14px;
+	}
 }

@@ -40,8 +40,18 @@ Router.map(function()
         path: '/chat',
     });
 
+    this.route('events', 
+    {
+        path: '/events',
+    });
+
     this.route('resources', 
     {
         path: '/resources',
+    });
+
+    this.route('articles', 
+    {
+        path: '/articles',
     });
 });

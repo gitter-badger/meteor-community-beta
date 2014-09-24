@@ -6,8 +6,6 @@
 meteor-platform
 accounts-base
 iron:router
-accounts-password
-joshowens:accounts-entry
 less
 pinglamb:bootstrap3
 sacha:spin
