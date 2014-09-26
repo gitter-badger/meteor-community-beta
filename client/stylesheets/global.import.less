@@ -49,6 +49,28 @@ body {
 		}
 }
 
+// Section header
+.section-header {
+	text-align: center;
+	margin: 40px;
+
+		h2	{
+			font-size: 3em;
+			margin: 0;
+			padding: 0;
+		}
+
+		.lead {
+			text-align: center;
+			font-weight: 300;
+			max-width: 800px;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			color: lighten(@mc-secondary-color, 10%);
+		}
+}
+
 // Load more button
 .load-more {
 	margin: 40px 0;
@@ -84,6 +106,50 @@ body {
 		font-weight: 700;
 	}
 }
+
+// Bottom mesg bar
+.bottom-mesg-bar {
+	background-color: #4cae4c;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	color: #fff;
+	z-index: 2000;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 50px;
+
+		a {
+			color: #fff;
+			font-weight: 700;
+		}
+}
+
+// Coming soon call out
+.coming-soon-callout {
+	border: dotted 1px #5bc0de;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+
+		h4 {
+			font-size: 2em;
+			color: #5bc0de;
+		}
+
+		p {
+			font-size: 1.3em;
+			font-weight: 300;
+		}
+
+		a {
+			color: #fff;
+			font-weight: 400;
+			text-decoration: underline;
+		}
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {

@@ -1,0 +1,31 @@
+<template name="forum-cateorgies">
+	<header class="page-header">
+		<h1>Forum</h1>
+	</header>
+	<div class="container">
+		<section class="forum-categories">
+			<ul>
+				<li>
+					<a href="{{pathFor 'forum-threads' category='news-general'}}">News & General Discussion</a>
+					<div class="thread-count">822</div>
+				</li>
+				<li>
+					<a href="{{pathFor 'forum-threads' category='community-events'}}">Community & Events</a>
+					<div class="thread-count">5</div>
+				</li>
+				<li>
+					<a href="{{pathFor 'forum-threads' category='development'}}">Meteor Development</a>
+					<div class="thread-count">87</div>
+				</li>
+				<li>
+					<a href="{{pathFor 'forum-threads' category='support'}}">Help & Support</a>
+					<div class="thread-count">142</div>
+				</li>
+				<li>
+					<a href="{{pathFor 'forum-threads' category='hosting-deploymemt'}}">Hosting & Deployment</a>
+					<div class="thread-count">29</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+</template>

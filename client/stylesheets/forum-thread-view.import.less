@@ -1,0 +1,130 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.forum-thread-view {
+
+	.thread-post {
+		background-color: #fff;
+		color: #333;
+		padding: 20px;
+		font-size: 1.2em;
+		position: relative;
+		margin: 0 0 2px 0;
+
+			.thread-title {
+				font-size: 2em;
+				margin: 10px 0 20px 0;
+				padding: 0;
+				text-align: left;
+			}
+
+			pre {
+				margin: 20px 0;
+			}
+	}
+
+	.author-avatar {
+		width: 40px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		border-radius: 50%;
+		margin: 10px 10px 10px 15px;
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+	}
+
+	.thread-post-footer {
+		color: lighten(@mc-secondary-color, 50%);
+		width: 100%;
+		height: 50px;
+		border-top: dotted 1px lighten(@mc-secondary-color, 50%);
+		margin: 40px 0 0;
+		padding: 10px 0 0;
+		font-size: 0.9em;
+		font-weight: 300;
+
+		.thread-posted-by {
+			width: 100%;
+			float: left;
+			text-align: center;
+		}
+
+		.thread-posted-on {
+			text-align: center;
+			width: 100%;
+			float: left;
+		}
+	}
+
+	.thread-replies {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+			.thread-reply {
+				min-height: 150px;
+			}
+	}
+
+	.thread-reply-form {
+		background-color: lighten(@mc-secondary-color, 80%);
+		padding: 40px;
+
+			label {
+				color: #333;
+				margin-bottom: 10px;
+			}
+
+			.reply {
+				min-height: 100px;
+				margin-bottom: 10px;
+			}
+	}
+	
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+	.forum-thread-view {
+	
+		.thread-post {
+			padding: 40px 40px 20px 100px;
+		}
+
+		.author-avatar {
+			width: 80px;
+			height: 80px;
+			top: 20px;
+			left: -55px;
+		}
+
+		.thread-post-footer {
+			height: 30px;
+
+				.thread-posted-by {
+					width: 50%;
+					text-align: left;
+				}
+
+				.thread-posted-on {
+					width: 50%;
+					text-align: right;
+				}
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+
+}

@@ -12,7 +12,10 @@
 		//height: 250px;
 		float: left;
 		width: 100%;
-		border-radius: 5px;
+
+		&:hover {
+			background-color: lighten(@mc-secondary-color, 80%);
+		}
 
 		.profile-img {
 			margin: 0 auto;
@@ -100,10 +103,11 @@
 @media (min-width: @screen-sm-min) {
 
 	.developer-grid {
+		padding: 0 40px;
 	
-		.developer-box {
-			width: 49.8%;
-		}
+			.developer-box {
+				width: 49.8%;
+			}
 	}
 }
 

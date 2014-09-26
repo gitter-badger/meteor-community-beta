@@ -22,12 +22,29 @@ Router.map(function()
 
     this.route('forum', 
     {
+        template: 'forum-cateorgies',
         path: '/forum',
+    });
+
+    this.route('forum-threads', 
+    {
+        path: '/forum/:category?',
+    });
+
+    this.route('forum-thread-view', 
+    {
+        template: 'forum-thread-view',
+        path: '/forum/thread/:_id?',
     });
 
     this.route('developers', 
     {
         path: '/developers',
+    });
+
+    this.route('showcase', 
+    {
+        path: '/showcase',
     });
 
     this.route('jobs', 

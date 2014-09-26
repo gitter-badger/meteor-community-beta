@@ -1,0 +1,106 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.forum-thread-list {
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: block;
+		margin-bottom: 1px;
+		height: 75px;
+		position: relative;
+		background-color: #fff;
+
+			&:hover {
+				background-color: lighten(@mc-secondary-color, 80%);
+			}
+	}
+
+	li a {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+			&:hover {
+				text-decoration: none;
+				color: @mc-primary-color;
+			}
+	}
+
+	.thread-detail {
+		margin-left: 85px;
+		color: #333;
+		height: 75px;
+		padding: 10px;
+
+			.thread-title {
+				font-size: 1.0em;
+			}
+
+			.thread-author {
+				font-size: 1.0em;
+				color: lighten(@mc-secondary-color, 50%);
+			}
+	}
+
+	.author-avatar {
+		width: 55px;
+		height: 55px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		border-radius: 50%;
+		margin: 10px 10px 10px 15px;
+		position: absolute;
+	}
+
+	.thread-posted-on {
+		display: none;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		color: lighten(@mc-secondary-color, 50%);
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+	.forum-thread-list {
+
+		.thread-detail {
+
+			.thread-title {
+				margin-top: 3px;
+				font-size: 1.5em;
+			}
+
+			.thread-author {
+				font-size: 1.0em;
+			}
+		}
+
+		.thread-posted-on {
+			display: block;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+
+}
