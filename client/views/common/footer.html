@@ -1,6 +1,32 @@
 <template name="footer">
+	<!-- Modal -->
+	<div class="modal fade" id="mailChimpSignUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<form action="//community.us9.list-manage.com/subscribe/post?u=8512638cc84b012179cfc1d73&amp;id=6d56297cfc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<div class="modal-content">	
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Sign Up for Email Updates</h4>
+					</div>
+					<div class="modal-body">
+						<!-- Begin MailChimp Signup Form -->
+						<div id="mc_embed_signup">
+    						<div id="mc_embed_signup_scroll">
+								<input type="email" value="" name="EMAIL" class="form-control input-lg" id="mce-EMAIL" placeholder="Your Email Address" required>
+    							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot 	signups-->
+    							<div style="position: absolute; left: -5000px;"><input type="text" name="	b_8512638cc84b012179cfc1d73_6d56297cfc" tabindex="-1" value=""></div>
+    						</div>
+						</div>
+						<!--End mc_embed_signup-->
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-success btn-lg">Subscribe</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 	<footer class="site-footer">
-		<p>Made in the <a href="https://www.google.co.uk/maps/place/Northampton/@52.2384178,-0.9008259,13z/data=!4m2!3m1!1s0x487704236e4aa273:0xcdf495d0d9e86209" target="blank">UK</a> • Founded by <a href="https://github.com/lukeclifton" target="blank">cliffers</a> • Built with Meteor | © 2014</p>
+		<p>Made in the <a href="https://www.google.co.uk/maps/place/Northampton/@52.2384178,-0.9008259,13z/data=!4m2!3m1!1s0x487704236e4aa273:0xcdf495d0d9e86209" target="blank">UK</a> • Founded by <a href="https://github.com/lukeclifton" target="blank">cliffers</a> • Built with Meteor | © 2014 | <a href="" data-toggle="modal" data-target="#mailChimpSignUpModal">Sign up for Updates</a></p>
 		<p class="legal">The meteor.community site is an independent entity and has not been authorized, sponsored, or otherwise approved by Meteor Development Group.</p>
 	</footer>
 </template>
